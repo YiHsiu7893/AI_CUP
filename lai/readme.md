@@ -19,3 +19,4 @@ python3 train.py --dataroot ./datasets/ROAD_pix2pix/train --name ROAD_pix2pix --
 ```
 image[:, :3, :, :]            # 只取圖片中的前3個channel
 ```
+- 在pix2pix_model.py 90行，如果folder名字有RO，就不會訓練到河流了
