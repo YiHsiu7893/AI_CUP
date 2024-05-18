@@ -14,7 +14,7 @@ python3 train.py --dataroot ./datasets/ROAD_pix2pix/train --name ROAD_pix2pix --
 
 ## 更
 
-- 修改util.py中的visualizer函式 (140行)
+- 修改util.py中的visualizer函式 (加在140行前)
 
 ```
 image[:, :3, :, :]            # 只取圖片中的前3個channel
