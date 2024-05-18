@@ -11,3 +11,11 @@ python3 train.py --dataroot ./datasets/ROAD_pix2pix/train --name ROAD_pix2pix --
 ```
     python3 test.py --dataroot ./datasets/ROAD_pix2pix_test --name ROAD_pix2pix --model test --direction BtoA --gpu_ids 1 --preprocess resize --load_size 512 --dataset_mode single --norm batch --netG unet_256 --num_test 720 --input_nc 4
 ```
+
+## 更
+
+- 修改util.py中的visualizer函式 (140行)
+
+```
+image[:, :3, :, :]            # 只取圖片中的前3個channel
+```
